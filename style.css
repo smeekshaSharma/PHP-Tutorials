@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 80%; 
+    padding: 34px; 
+    margin: auto;
+    background-color: cyan;
+}
+.container h1,p{
+    text-align: center;
+}
+input,textarea{
+    width: 80%;
+    margin: 11px;
+    padding: 7px;
+    font-size: 24px;
+}
+.submitmsg{ 
+    color: green;
+}

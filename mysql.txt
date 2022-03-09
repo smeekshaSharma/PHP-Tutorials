@@ -1,0 +1,19 @@
+1.Connect to Database 
+$conn=mysqli_connect($servername,$username,$password);
+2.Create a Database
+$sql="CREATE DATABASE dbHarry3";
+3.Create a TABLE
+$sql="CREATE TABLE `phptripone` ( `sno` INT(6) NOT NULL AUTO_INCREMENT , `name` VARCHAR(12) NOT NULL , `dest` INT(6) NOT NULL , PRIMARY KEY (`sno`))";
+
+
+$result = mysqli_query($conn,$sql);//Returns True(1) / False(0)
+if($result){
+    echo "The table was created successfully!";
+}
+else{
+    echo "The table was not created successfully because of error-->".mysqli_error($conn);
+}
+
+Form Elements must contain name and method="post"
+
+$aff=mysqli_affected_rows($conn);
